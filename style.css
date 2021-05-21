@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* ----------------------------------------- */
+body {
+  background-color: #333;
+  color: white;
+}
+/* ----------------------------------------- */
+.container {
+  max-width: 700px;
+  margin: 0 auto;  /* 가운데정렬 */
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex; /* flex */
+  flex-direction: column; /* flex 세로정렬*/
+  justify-content: space-between;  /* 컨텐츠간에 떨어지게*/
+  align-items: center; /* 요소 가운데*/
+}
+/* ----------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  align-items: center;
+  padding: 1.2rem 0; /*헤더 위에 공간*/
+}
+@media screen and (max-width:600px){
+  header{
+    flex-direction: column;
+  }
+}
+header > p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header > ul {
+  display: flex;
+}
+
+header > ul > li {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+header > ul > li > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding-top: 5px;
+  color: rgb(211, 211, 211);
+}
+
+header > ul > li:first-child{
+  border-bottom: 5px solid;
+  color: white;
+}
+header>ul>li>a:hover{
+  border-bottom: 5px solid;
+  color : gray;
+}
+/* ----------------------------------------- */
+section{
+  padding: 0 3rem;
+  text-align: center;
+}
+
+section>p{
+  margin-bottom: 1rem;
+}
+
+section>p:first-child{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+section>p:last-child{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+section>a {
+  display: block;
+  border : 1px solid black;
+  width: 130px;
+  font-size: 1.3rem;
+  font-weight: 00;
+  margin: auto;
+  padding:0.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+/* ----------------------------------------- */
+footer {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+footer>a {
+  text-decoration: none;
+}
